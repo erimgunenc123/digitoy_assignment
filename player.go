@@ -127,7 +127,7 @@ func (p *Player) combinedGroupDistance(combinedGroup []Tile) int {
 		}
 	}
 	excessOkeyCount := p.okeyCount - usedOkeyCount
-	totalDistance := len(p.board) + p.okeyCount - excessOkeyCount + totalOverlaps - totalTileCount
+	totalDistance := len(p.board) - excessOkeyCount + totalOverlaps - totalTileCount
 	return totalDistance
 }
 

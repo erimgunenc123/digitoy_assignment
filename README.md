@@ -8,3 +8,10 @@ Zaman yetmediğinden dolayı orayı optimize etmeden bıraktım (ayrıca optimiz
 Düz bir şekilde çalıştırmakta sıkıntı yok, rastgele dağıtırken çok yüksek ihtimalle birkaç tane valid serisi olan
 ıstaka oluşuyor, onları anında hesaplayabilir. 2 okey çıktığında ıstakanın geri kalanının ne kadar iyi geldiğine göre 3-4 saniye 
 sürebiliyor.
+
+Çalıştırmak için 
+zip olarak indirip bir directorye çıkartın
+"go build" komutunu kullandıktan sonra oluşan executable'ı çalıştırın.
+
+dipnot: ANSI renk kodları ile printledim konsola. kullandığınız terminalin ANSI color code support'u olması gerekiyor.
+Öteki türlü [97m5 şeklinde sayılar görebilirsiniz. 

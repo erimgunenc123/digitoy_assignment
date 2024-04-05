@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func main() {
 	player1 := NewPlayer("bob")
@@ -25,5 +29,6 @@ func main() {
 	println(fmt.Sprintf("\nClosest finishing board holder: %s  Distance: %d Doubles/Serial: %s", topPlayer.playerName, minDist, distMethod))
 	println("*********Board*******")
 	topPlayer.PrintBoard()
-
+	println("Çıkmak için bir tuşa basın")
+	bufio.NewReader(os.Stdin).ReadLine()
 }
